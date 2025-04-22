@@ -15,7 +15,8 @@
   }
 
   form.turno-form,
-  table.tabla-turnos {
+  table.tabla-turnos,
+  .total-container {
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
@@ -30,7 +31,7 @@
     border: 1px solid transparent;
     border-radius: 5px
   }
-  form button{
+  form button, .total-container button{
     color: white;
     background-color: #ffd500;
     border: 1px solid transparent;
@@ -62,7 +63,7 @@
     border-radius: 5px
   }
 
-  .total {
+  .total, .reset-button{
     background-color: #ffd500;
     font-weight: bold;
     font-size: 1.2em;

@@ -78,6 +78,15 @@ const tarifas = {
     }
   }
 
+  function reiniciarCalculadora() {
+    if (confirm("¿Estás seguro de que quieres reiniciar todos los datos?")) {
+      localStorage.removeItem("turnos");
+      document.querySelector("#tabla-turnos tbody").innerHTML = "";
+      document.getElementById("total").textContent = "0";
+    }
+  }
+  
+
   document.getElementById("turno-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const fecha = document.getElementById("fecha").value;
